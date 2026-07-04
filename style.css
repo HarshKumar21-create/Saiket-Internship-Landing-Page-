@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial,sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+.nav-links a{
+      text-decoration: none;
+      color: white;
+}
+.hero{
+    text-align: center;
+    padding: 20px 70px;
+}
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.hero p{
+    color: gray;
+    margin-bottom: 20px;
+}
+.hero button{
+    background-color: rgb(75, 213, 75);
+    border-radius: 25px;
+    padding: 15px 30px;
+}
+.albums{
+    padding: 20px;
+}
+.albums h2{
+    margin-bottom:20px;
+    text-align: center;
+}
+.album-container{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.album-card{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    background: #1e1e1e;
+    color: white
+    ;
+}
+.playlists{
+    padding: 20px;
+}
+.playlists h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.playlist-container{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.playlist-card{
+    padding:20px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #282828;
+    width: 180px;
+    
+}
+
+artists{
+    padding: 50px;
+}
+
+.artists h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.artist-container{
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artist-card{
+    padding: 20px;
+    border-radius: 15px 10px;
+    text-align: center;
+    background-color: #1e1e1e;
+    min-height: 70px;
+    width: 120px;
+
+}
+
+.artist-card div{
+    font-size: 16px;
+    margin: 0;
+}
+
+
+footer{
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #121212;
+    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-links a:hover{
+    color:greenyellow;
+}
+
+button:hover{
+    cursor: pointer;
+    
+}
+button{
+    transition: 0.3s;
+}
+
+.album-card:hover,.playlist-card:hover,.artist-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.album-card,
+.playlist-card,
+.artist-card,
+button{
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px){
+
+nav{
+    flex-direction: column;
+    gap:40px;
+}
+
+.hero h1{
+    font-size:40px ;
+}
+
+.album-container,.playlist-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+}
+}
+.active:hover{
+    background-color: gray;
+    transform: scale(1.05);
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+    transition: 0.3s;
+}
+
+#search{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 180px;;
+}
+
+#search:focus{
+   border: 2px solid #1db954;
+}
+
+#status{
+    margin-top: 20px;
+}
+
